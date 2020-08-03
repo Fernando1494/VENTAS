@@ -13,14 +13,14 @@ public class Productos {
     
     int idproducto;
     String nomproducto;
-    String cantidad;
-    String precio;
+    int cantidad;
+    float precio;
     String estado;
 
     public Productos() {
     }
 
-    public Productos(int idproducto, String nomproducto, String cantidad, String precio, String estado) {
+    public Productos(int idproducto, String nomproducto, int cantidad, float precio, String estado) {
         this.idproducto = idproducto;
         this.nomproducto = nomproducto;
         this.cantidad = cantidad;
@@ -44,19 +44,19 @@ public class Productos {
         this.nomproducto = nomproducto;
     }
 
-    public String getCantidad() {
+    public int getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(String cantidad) {
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
 
-    public String getPrecio() {
+    public float getPrecio() {
         return precio;
     }
 
-    public void setPrecio(String precio) {
+    public void setPrecio(float precio) {
         this.precio = precio;
     }
 
@@ -67,7 +67,7 @@ public class Productos {
     public void setEstado(String estado) {
         this.estado = estado;
     }
-    
-    
+
+   
     
 }
